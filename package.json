@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tidusia",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Opinionated Eslint configuration with Prettier, React and TypeScript support",
   "keywords": [
     "javascript",
