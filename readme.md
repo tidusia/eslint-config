@@ -1,8 +1,8 @@
-# Opinionated Eslint + Prettier, React, TypeScript setup
+# Opinionated Eslint config to work with Prettier, React and TypeScript
 
 ## The problem
 
-I love high code quality standards. But setting up and maintaining configuration takes a long time for each project.
+I love high code quality standards, but setting up and maintaining configuration takes a long time for each project.
 
 One day, I found [eslint-config-wesbos](https://github.com/wesbos/eslint-config-wesbos) from Wes Bos.
 I loved the idea : a unique place to share my favorite eslint configuration of the moment.
@@ -10,8 +10,8 @@ I loved the idea : a unique place to share my favorite eslint configuration of t
 One place for all the rules, one place to maintain them. Easy to distribute as a npm package for each project. 
 
 ## What it does (or will do)
-- [ ] Lints TypeScript based on the latest standards
-- [ ] Fixes issues and formatting errors with Prettier
+- [x] Lints TypeScript based on the latest standards
+- [x] Fixes issues and formatting errors with Prettier
 - [ ] Lints + Fixes inside of html script tags (plugins html)
 - [ ] Lints + Fixes React via eslint-config-airbnb
 
@@ -29,7 +29,7 @@ npx install-peerdeps --dev eslint-config-tidusia
 
 4. Create a `.eslintrc` file in the root of your project's directory (it should live where package.json does). Your `.eslintrc` file should look like this:
 
-```json
+```js
 {
   "extends": [
     "tidusia"
@@ -43,8 +43,8 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 
 ```json
 "scripts": {
-  "lint": "eslint .",
-  "lint:fix": "eslint . --fix"
+  "lint": "eslint . --ignore-path .gitignore",
+  "lint:fix": "eslint . --fix --ignore-path .gitignore"
 },
 ```
 
