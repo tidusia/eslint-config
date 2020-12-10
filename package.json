@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-tidusia",
-  "version": "0.0.2",
+  "name": "@tidusia/eslint-config",
+  "version": "0.0.3",
   "description": "Opinionated Eslint config to work with Prettier, React and TypeScript",
   "keywords": [
     "javascript",
@@ -12,7 +12,10 @@
     "typescript"
   ],
   "main": "index.js",
-  "repository": "git@github.com:tidusia/eslint-config-tidusia.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tidusia/eslint-config.git"
+  },
   "author": "Thibaud Duthoit <contact@thibaud-duthoit.fr>",
   "license": "MIT",
   "peerDependencies": {
@@ -48,5 +51,10 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/tidusia/eslint-config/issues"
+  },
+  "homepage": "https://github.com/tidusia/eslint-config#readme",
+  "dependencies": {}
 }

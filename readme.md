@@ -7,13 +7,7 @@ I love high code quality standards, but setting up and maintaining configuration
 One day, I found [eslint-config-wesbos](https://github.com/wesbos/eslint-config-wesbos) from Wes Bos.
 I loved the idea : a unique place to share my favorite eslint configuration of the moment.
 
-One place for all the rules, one place to maintain them. Easy to distribute as a npm package for each project. 
-
-## What it does (or will do)
-- [x] Lints TypeScript based on the latest standards
-- [x] Fixes issues and formatting errors with Prettier
-- [ ] Lints + Fixes inside of html script tags (plugins html)
-- [ ] Lints + Fixes React via eslint-config-airbnb
+One place for all the rules, one place to maintain them. Easy to distribute as a npm package for each project.
 
 ## Installing
 
@@ -22,7 +16,7 @@ One place for all the rules, one place to maintain them. Easy to distribute as a
 2. Then we need to install everything needed by the config:
 
 ```
-npx install-peerdeps --dev eslint-config-tidusia
+npx install-peerdeps --dev @tidusia/eslint-config
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -32,7 +26,7 @@ npx install-peerdeps --dev eslint-config-tidusia
 ```js
 {
   "extends": [
-    "tidusia"
+    "@tidusia/eslint-config"
   ]
 }
 ```
@@ -52,7 +46,7 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 
 ## Settings
 
-If you'd like to overwrite eslint or prettier settings, you can add the rules in your `.eslintrc` file. The [ESLint rules](https://eslint.org/docs/rules/) go directly under `"rules"` while [prettier options](https://prettier.io/docs/en/options.html) go under `"prettier/prettier"`. Note that prettier rules overwrite anything in my config (trailing comma, and single quote), so you'll need to include those as well.
+If you'd like to overwrite eslint or prettier settings, you can add the rules in your `.eslintrc` file. The [ESLint rules](https://eslint.org/docs/rules/) go directly under `"rules"`.
 
 ```js
 {
@@ -61,33 +55,26 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
   ],
   "rules": {
     "no-console": 2,
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "printWidth": 120,
-        "tabWidth": 8,
-      }
-    ]
   }
 }
 ```
 
+After that, create your own [prettier configuration](https://prettier.io/docs/en/install.html) or check out my [shared prettier config](https://github.com/tidusia/prettier-config) for a quick start.
+
 ## With Create React App
 
-1. Run `npx install-peerdeps --dev eslint-config-tidusia`
+1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
 1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "tidusia"`
 
 ## With Gatsby
 
-1. Run `npx install-peerdeps --dev eslint-config-tidusia`
+1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
 1. If you have an existing `.prettierrc` file, delete it.
 1. follow the `Installing` steps above
 
 ## With Yarn
 
-It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev eslint-config-tidusia -Y`
+It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev @tidusia/eslint-config -Y`
 
 ## 🤬🤬🤬🤬 IT'S NOT WORKING
 
