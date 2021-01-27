@@ -1,6 +1,6 @@
 {
   "name": "@tidusia/eslint-config",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Opinionated Eslint config to work with Prettier, React and TypeScript",
   "keywords": [
     "javascript",
