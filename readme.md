@@ -61,27 +61,3 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 
 After that, create your own [prettier configuration](https://prettier.io/docs/en/install.html) or check out my [shared prettier config](https://github.com/tidusia/prettier-config) for a quick start.
 
-## With Create React App
-
-1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
-1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "tidusia"`
-
-## With Gatsby
-
-1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
-1. If you have an existing `.prettierrc` file, delete it.
-1. follow the `Installing` steps above
-
-## With Yarn
-
-It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev @tidusia/eslint-config -Y`
-
-## Going further
-
-Check out [the shared prettier config !](https://github.com/tidusia/prettier-config)
-
-## 🤬🤬🤬🤬 IT'S NOT WORKING
-
-Start fresh. Sometimes modules can goof you up. This will remove them all: remove your `package-lock.json` file and delete the `node_modules/` directory.
-
-Then follow the above instructions again.
