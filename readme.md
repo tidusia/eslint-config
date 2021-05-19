@@ -51,7 +51,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "tidusia"
+    "@tidusia/eslint-config"
   ],
   "rules": {
     "no-console": 2,
