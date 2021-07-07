@@ -74,11 +74,3 @@ After that, create your own [prettier configuration](https://prettier.io/docs/en
 1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
 1. If you have an existing `.prettierrc` file, delete it.
 1. follow the `Installing` steps above
-
-## With Yarn
-
-It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev @tidusia/eslint-config -Y`
-
-## Going further
-
-Check out [the shared prettier config !](https://github.com/tidusia/prettier-config)
