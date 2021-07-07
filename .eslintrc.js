@@ -32,32 +32,19 @@ module.exports = {
     "no-alert": "error",
     "no-await-in-loop": "error",
     "no-return-assign": "error",
+    "no-unused-expressions": [
+      "error",
+      {
+        allowShortCircuit: true,
+        enforceForJSX: true,
+      },
+    ],
+    "no-param-reassign": ["error", { props: true }],
   },
   // Below are rules from Web Bos to check
   // rules: {
-  //   'prefer-const': [
-  //     'error',
-  //     {
-  //       destructuring: 'all',
-  //     },
-  //   ],
-  //   'arrow-body-style': [2, 'as-needed'],
-  //   'no-unused-expressions': [
-  //     2,
-  //     {
-  //       allowTaggedTemplates: true,
-  //     },
-  //   ],
-  //   'no-param-reassign': [
-  //     2,
-  //     {
-  //       props: false,
-  //     },
-  //   ],
-  //   'no-console': 0,
   //   'import/prefer-default-export': 0,
   //   import: 0,
-  //   'func-names': 0,
   //   'space-before-function-paren': 0,
   //   'comma-dangle': 0,
   //   'max-len': 0,
