@@ -26,29 +26,15 @@ module.exports = {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/no-unescaped-entities": "off",
-    "no-console": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "no-console": "warn",
+    "no-alert": "error",
+    "no-await-in-loop": "error",
+    "no-return-assign": "error",
   },
   // Below are rules from Web Bos to check
   // rules: {
-  //   'no-debugger': 0,
-  //   'no-alert': 0,
-  //   'no-await-in-loop': 0,
-  //   'no-return-assign': ['error', 'except-parens'],
-  //   'no-restricted-syntax': [
-  //     2,
-  //     'ForInStatement',
-  //     'LabeledStatement',
-  //     'WithStatement',
-  //   ],
-  //   'no-unused-vars': [
-  //     1,
-  //     {
-  //       ignoreRestSiblings: true,
-  //       argsIgnorePattern: 'res|next|^err',
-  //     },
-  //   ],
   //   'prefer-const': [
   //     'error',
   //     {
