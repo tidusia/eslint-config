@@ -1,6 +1,6 @@
 {
   "name": "@tidusia/eslint-config",
-  "version": "0.0.6",
+  "version": "0.0.0-semantically-released",
   "description": "Opinionated Eslint config to work with Prettier, React and TypeScript",
   "keywords": [
     "javascript",
@@ -14,7 +14,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/tidusia/eslint-config.git"
+    "url": "https://github.com/tidusia/eslint-config.git"
   },
   "author": "Thibaud Duthoit <contact@thibaud-duthoit.fr>",
   "license": "MIT",
@@ -30,6 +30,7 @@
     "typescript": "^4.2.3"
   },
   "devDependencies": {
+    "@tidusia/prettier-config": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",
     "eslint": "^7.21.0",
@@ -37,16 +38,24 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
+    "husky": "^7.0.1",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.4",
     "typescript": "^4.2.3"
   },
   "scripts": {
     "lint": "eslint . --ignore-path .gitignore",
-    "lint:fix": "eslint . --fix --ignore-path .gitignore"
+    "lint:fix": "eslint . --fix --ignore-path .gitignore",
+    "semantic-release": "semantic-release",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.{js,jsx,ts,tsx,json,md,mdx,html,css}\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --check",
+    "test": "npm run format:check && npm run lint",
+    "pre-commit": "npm test",
+    "prepare": "husky install"
   },
   "bugs": {
     "url": "https://github.com/tidusia/eslint-config/issues"
   },
-  "homepage": "https://github.com/tidusia/eslint-config#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/tidusia/eslint-config#readme"
 }

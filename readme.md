@@ -1,5 +1,8 @@
 # Opinionated Eslint config to work with Prettier, React and TypeScript
 
+![Github actions](https://github.com/tidusia/eslint-config/actions/workflows/release.yml/badge.svg)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
 ## The problem
 
 I love high code quality standards, but setting up and maintaining configuration takes a long time for each project.
@@ -51,7 +54,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "tidusia"
+    "@tidusia/eslint-config"
   ],
   "rules": {
     "no-console": 2,
@@ -64,7 +67,7 @@ After that, create your own [prettier configuration](https://prettier.io/docs/en
 ## With Create React App
 
 1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
-1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "tidusia"`
+1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "@tidusia/eslint-config"`
 
 ## With Gatsby
 
@@ -79,9 +82,3 @@ It should just work, but if they aren't showing up in your package.json, try `np
 ## Going further
 
 Check out [the shared prettier config !](https://github.com/tidusia/prettier-config)
-
-## 🤬🤬🤬🤬 IT'S NOT WORKING
-
-Start fresh. Sometimes modules can goof you up. This will remove them all: remove your `package-lock.json` file and delete the `node_modules/` directory.
-
-Then follow the above instructions again.
