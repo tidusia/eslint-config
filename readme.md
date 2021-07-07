@@ -1,5 +1,8 @@
 # Opinionated Eslint config to work with Prettier, React and TypeScript
 
+![Github actions](https://github.com/tidusia/eslint-config/actions/workflows/release.yml/badge.svg)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+
 ## The problem
 
 I love high code quality standards, but setting up and maintaining configuration takes a long time for each project.
@@ -61,3 +64,21 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 
 After that, create your own [prettier configuration](https://prettier.io/docs/en/install.html) or check out my [shared prettier config](https://github.com/tidusia/prettier-config) for a quick start.
 
+## With Create React App
+
+1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
+1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "@tidusia/eslint-config"`
+
+## With Gatsby
+
+1. Run `npx install-peerdeps --dev @tidusia/eslint-config`
+1. If you have an existing `.prettierrc` file, delete it.
+1. follow the `Installing` steps above
+
+## With Yarn
+
+It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev @tidusia/eslint-config -Y`
+
+## Going further
+
+Check out [the shared prettier config !](https://github.com/tidusia/prettier-config)
