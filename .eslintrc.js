@@ -6,6 +6,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:jest-dom/recommended",
     "prettier",
   ],
   plugins: ["@typescript-eslint", "jsx-a11y"],
