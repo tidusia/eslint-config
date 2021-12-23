@@ -34,7 +34,6 @@ module.exports = {
     "no-console": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "storybook/no-title-property-in-meta": "off",
   },
   // Below are rules from Web Bos to check
   // rules: {
