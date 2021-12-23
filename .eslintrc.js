@@ -6,6 +6,10 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
+    "plugin:storybook/recommended",
+    "plugin:storybook/csf",
+    "plugin:storybook/csf-strict",
+    "plugin:storybook/addon-interactions",
     "plugin:jest-dom/recommended",
     "prettier",
   ],
@@ -30,6 +34,7 @@ module.exports = {
     "no-console": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "storybook/no-title-property-in-meta": "off",
   },
   // Below are rules from Web Bos to check
   // rules: {
